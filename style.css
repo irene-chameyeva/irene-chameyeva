@@ -1,0 +1,116 @@
+@font-face { font-family: PTsans; src: url('fonts/PT_Sans-Narrow-Web-Regular.ttf'); }
+@font-face { font-family: PTsans; font-weight: bold; src: url('fonts/PT_Sans-Narrow-Web-Bold.ttf'); }
+
+body {
+	background: #ddf2fe url("bg.png") repeat;
+	margin: 0;
+	padding: 0;
+	font-family: 'PTsans', 'Arial Narrow';
+
+}
+
+#page {
+	width: 750px;
+	background: white;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#title {
+	text-align: center;
+	border-bottom: solid #00a2ff;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-weight: normal;
+	color: #7e7e7e;
+	margin: 0;
+}
+
+.block {
+	width: 230px;
+	height: 350px;
+	margin: 10px;
+	vertical-align: top;
+	background-color: #f5f5f5;
+}
+
+.block h3 {
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	text-indent: 8px;
+	background-color: #e1f4ff;
+	color: #00a2ff;
+	font-weight: normal;
+	font-size: 1.5em;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.block p {
+	padding: 0;
+	margin: 12px;
+}
+
+.p1 { margin-bottom: 10px; }
+
+.p2 { margin-bottom: 10px; }
+
+.p1 i {
+	display: inline-block;
+	position: relative;
+	top: 8px;
+	width: 25px;
+	height: 25px;
+	margin-right: 7px;
+	margin-left: 15px;
+	background: url("sprite.png") no-repeat;
+	background-position: 0px 0px;
+}
+
+.p2 i {
+	display: inline-block;
+	position: relative;
+	top: 8px;
+	width: 25px;
+	height: 25px;
+	margin-right: 7px;
+	margin-left: 15px;
+	background: url("sprite.png") no-repeat;
+	background-position: -25px 0px;
+}
+
+#footer {
+	border-top: solid #ebebeb;
+	text-align: center;
+	padding: 15px;
+	color: #858585;
+	background-color: #f4f4f4;
+}
+
+a:link {color: #7e7e7e}
+a:visited {color: #7e7e7e}
+a:active {color: #7e7e7e}
+a:hover {color: #00a2ff;}
+
+ul {
+    list-style-type: square;
+	font-weight: normal;
+}
+
+#page {
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+ 
+#page:before,
+#page:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+}  
